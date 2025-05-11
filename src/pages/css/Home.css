@@ -1,0 +1,221 @@
+.home-main {
+    margin-top: -72px;
+    padding-top: 272px;
+    padding-left: 345px;
+    padding-bottom: 60px;
+    background: url("/images/home-main-bg.png") no-repeat;
+}
+
+.home-main-title {
+    width: 810px;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    color: var(--white);
+
+    span {
+        color: var(--primary);
+    }
+}
+
+.home-main-info {
+    margin-top: 44px;
+    gap: 25px;
+
+    .info-link {
+        display: block;
+        width: 219px;
+        height: 52px;
+        border: 1px solid currentColor;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 52px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: var(--white);
+    }
+
+    .play-name {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--white);
+    }
+}
+
+.home-main-features {
+    margin-top: 124px;
+    gap: 94px;
+
+    .features-item {
+        gap: 20px;
+    }
+
+    .features-item-title {
+        font-size: 20px;
+        color: var(--white);
+    }
+
+    .divider {
+        width: 1px;
+        height: 40px;
+        background: linear-gradient(95deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12%,
+                #DADBDD 52%, rgba(218, 219, 221, 0.5) 88%, rgba(218, 219, 221, 0) 100%);
+    }
+}
+
+.home-info {
+    margin-top: 120px;
+    margin-left: 345px;
+    gap: 105px;
+}
+
+.home-info-text {
+    width: 630px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: var(--gray-900);
+}
+
+.home-info-awards {
+    width: 495px;
+    flex-wrap: wrap;
+    column-gap: 41px;
+    row-gap: 32px;
+
+    .awards-item {
+        gap: 16px;
+    }
+
+    .awards-item-desc {
+        width: 136px;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--gray-800);
+    }
+}
+
+.home-clients {
+    width: fit-content;
+    margin: 180px auto 0;
+}
+
+.home-middle {
+    margin-top: 39px;
+    padding-top: 131px;
+    padding-bottom: 180px;
+    background: url("/images/home-middle-bg.png") no-repeat;
+}
+
+.home-about  {
+    margin-left: 345px;
+    gap: 135px;
+}
+
+.home-about-desc {
+    width: 390px;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-700);
+}
+
+.home-about-more {
+    display: block;
+    width: 161px;
+    height: 44px;
+    margin-top: 48px;
+    background-color: var(--primary);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: var(--white);
+}
+
+.home-figures {
+    width:  fit-content;
+    margin: 180px auto 0;
+    gap: 48px;
+}
+
+.home-figures-item {
+    width: 148px;
+    text-align: center;
+
+    .figures-item-num {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 148px;
+        height: 148px;
+        border-radius: 100%;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 130%;
+        color: var(--gray-900);
+    } 
+
+    .figures-item-desc {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--gray-800);
+    }
+}
+
+.home-figures-item:nth-child(1) {
+    .figures-item-num {
+         background: url("/images/figure1-bg.png") no-repeat;
+    }
+}
+
+.home-figures-item:nth-child(2) {
+    .figures-item-num {
+         background: url("/images/figure2-bg.png") no-repeat;
+    }
+}
+
+.home-figures-item:nth-child(3) {
+    .figures-item-num {
+         background: url("/images/figure3-bg.png") no-repeat;
+    }
+}
+
+.home-figures-item:nth-child(4) {
+    .figures-item-num {
+        border: 6px solid var(--success);
+    }
+}
+
+.home-services {
+    margin-top: 180px;
+}
+
+.home-services-tabs {
+    margin-top: 40px;
+    margin-left: 345px;
+
+    .tab-btn {
+        display: block;
+        width: 246px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--gray-600);
+    }
+    
+    .tab-btn__active {
+        border: 1px solid currentColor;
+        border-radius: 4px;
+        color: var(--primary);
+    }
+}
