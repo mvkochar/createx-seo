@@ -1,0 +1,86 @@
+.seo-analysis {
+    padding: 80px 345px;
+    gap: 233px;
+    background: url("/images/seo-analysis-bg.png") no-repeat;
+
+    .page-bl-title {
+        color: var(--white);
+    }
+}
+
+.seo-analysys-fm {
+    margin-top: 40px;
+
+    .input-bl {
+        gap: 30px;
+        margin-bottom: 24px;
+
+        input {
+            width: 285px;
+        }
+    }
+
+    input,
+    label,
+    button {
+        display: block;
+    }
+
+    label {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 160%;
+        color: var(--white);
+    }
+
+    input {
+        width: 600px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 16px;
+        background-color: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        outline: none;
+        font-size: 16px;
+        color: var(--white);
+
+        &::placeholder {
+            color: var(--white);
+        }
+    }
+
+    .control-bl {
+        margin-top: 48px;
+        gap: 65px;
+    }
+
+    .check-bl {
+        gap: 12px;
+
+        input {
+            margin-top: 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        label {
+            width: 287px;
+            margin-bottom: 0;
+        }
+    }
+
+    button {
+        width: 219px;
+        height: 52px;
+        background-color: var(--primary);
+        border: 1px solid var(--primary);
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 52px;
+        letter-spacing: 0.5px;
+        color: var(--white);
+    }
+}

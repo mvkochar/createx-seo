@@ -1,0 +1,23 @@
+.faq_item {
+    width: 600px;
+}
+
+.faq_item_heading {
+    display: flex;
+    gap: 20px;
+}
+
+.faq_item_question {
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-900);
+}
+
+.faq_item_answer {
+    width: 556px;
+    margin-top: 12px;
+    margin-left: 40px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-700);
+}
