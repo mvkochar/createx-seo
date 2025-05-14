@@ -444,7 +444,7 @@ const Home = () => {
                 </div>
                 <h3 className="benefits-item-title">We're a True Partner</h3>
                 <p className="benefits-item-desc">
-                  Quis sed malesuada tincidunt amet, vitae mi justo elementum eu. 
+                  Quis sed malesuada tincidunt amet, vitae mi justo elementum eu.
                   Dui gravida id elementum dolor sed elementum, risus.
                 </p>
               </div>
@@ -458,51 +458,147 @@ const Home = () => {
             <button className='tab-btn'>Yearly <span>-12% Off</span></button>
           </div>
           <div className="home-pricing-box d-f">
-              <div className="home-pricing-item">
-                <h3 className="pricing-item-title">Basic</h3>
-                <h4 className="pricing-item-price">$24 <sup>/mon</sup></h4>
-                <div className="divider"></div>
-                <ul className="pricing-item-list">
-                  <li>Advanced Analytics</li>
-                  <li>Change Management</li>
-                  <li>Corporate Finance</li>
-                  <li>One Way Link Building</li>
-                  <li>Social Media Marketing</li>
-                  <li className='unavailable'>Strategy & Marketing</li>
-                  <li className='unavailable'>Information Technology</li>
-                </ul>
-                <a href="" className="pricing-item-choose">Choose plan</a>
+            <div className="home-pricing-item">
+              <h3 className="pricing-item-title">Basic</h3>
+              <h4 className="pricing-item-price">$24 <sup>/mon</sup></h4>
+              <div className="divider"></div>
+              <ul className="pricing-item-list">
+                <li>Advanced Analytics</li>
+                <li>Change Management</li>
+                <li>Corporate Finance</li>
+                <li>One Way Link Building</li>
+                <li>Social Media Marketing</li>
+                <li className='unavailable'>Strategy & Marketing</li>
+                <li className='unavailable'>Information Technology</li>
+              </ul>
+              <a href="" className="pricing-item-choose">Choose plan</a>
+            </div>
+            <div className="home-pricing-item">
+              <h3 className="pricing-item-title">Optimal</h3>
+              <h4 className="pricing-item-price">$64 <sup>/mon</sup></h4>
+              <div className="divider"></div>
+              <ul className="pricing-item-list">
+                <li>Advanced Analytics</li>
+                <li>Change Management</li>
+                <li>Corporate Finance</li>
+                <li>One Way Link Building</li>
+                <li>Social Media Marketing</li>
+                <li>Strategy & Marketing</li>
+                <li className='unavailable'>Information Technology</li>
+              </ul>
+              <a href="" className="pricing-item-choose">Choose plan</a>
+            </div>
+            <div className="home-pricing-item">
+              <h3 className="pricing-item-title">Premium</h3>
+              <h4 className="pricing-item-price">$98 <sup>/mon</sup></h4>
+              <div className="divider"></div>
+              <ul className="pricing-item-list">
+                <li>Advanced Analytics</li>
+                <li>Change Management</li>
+                <li>Corporate Finance</li>
+                <li>One Way Link Building</li>
+                <li>Social Media Marketing</li>
+                <li>Strategy & Marketing</li>
+                <li>Information Technology</li>
+              </ul>
+              <a href="" className="pricing-item-choose">Choose plan</a>
+            </div>
+          </div>
+        </div>
+        <div className="home-testimonials">
+          <h2 className="page-bl-title text-center">What our clients say</h2>
+          <div className="home-testimonials-content d-f jc-sb align-center">
+            <button className='home-testimonials-action'>
+              <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.20222 11.2071C5.8117 11.5976 5.17853 11.5976 4.78801 11.2071L0.28801 6.70711C-0.102514 6.31658 -0.102514 5.68342 0.28801 5.29289L4.78801 0.792893C5.17853 0.402369 5.8117 0.402369 6.20222 0.792893C6.59275 1.18342 6.59275 1.81658 6.20222 2.20711L3.40933 5L16.9951 5C17.5474 5 17.9951 5.44772 17.9951 6C17.9951 6.55228 17.5474 7 16.9951 7L3.40933 7L6.20222 9.79289C6.59275 10.1834 6.59275 10.8166 6.20222 11.2071Z" fill="#424551" />
+              </svg>
+            </button>
+            <div className="home-testimonials-info">
+              <div className="home-testimonials-review d-f">
+                <div><img src="/images/braces.png" alt="braces" /></div>
+                <div>
+                  <p className="home-testimonials-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Justo, amet lectus quam viverra mus lobortis fermentum amet, eu.
+                    Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis
+                    quis non. Congue tortor in euismod vulputate etiam eros.
+                    Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                  </p>
+                  <div className="home-testimonials-author d-f align-center">
+                    <div><img src="/images/author.png" alt="author" /></div>
+                    <div>
+                      <h4 className="author-name">Courtney Alexander</h4>
+                      <p className="author-pos">Position, Company name</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-               <div className="home-pricing-item">
-                <h3 className="pricing-item-title">Optimal</h3>
-                <h4 className="pricing-item-price">$64 <sup>/mon</sup></h4>
-                <div className="divider"></div>
-                <ul className="pricing-item-list">
-                  <li>Advanced Analytics</li>
-                  <li>Change Management</li>
-                  <li>Corporate Finance</li>
-                  <li>One Way Link Building</li>
-                  <li>Social Media Marketing</li>
-                  <li>Strategy & Marketing</li>
-                  <li className='unavailable'>Information Technology</li>
-                </ul>
-                <a href="" className="pricing-item-choose">Choose plan</a>
-              </div>
-                <div className="home-pricing-item">
-                <h3 className="pricing-item-title">Premium</h3>
-                <h4 className="pricing-item-price">$98 <sup>/mon</sup></h4>
-                <div className="divider"></div>
-                <ul className="pricing-item-list">
-                  <li>Advanced Analytics</li>
-                  <li>Change Management</li>
-                  <li>Corporate Finance</li>
-                  <li>One Way Link Building</li>
-                  <li>Social Media Marketing</li>
-                  <li>Strategy & Marketing</li>
-                  <li>Information Technology</li>
-                </ul>
-                <a href="" className="pricing-item-choose">Choose plan</a>
-              </div>
+            </div>
+            <button className='home-testimonials-action'>
+              <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z" fill="#424551" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div className="home-blog d-f">
+          <div>
+            <h2 className="page-bl-title">Latest news</h2>
+            <p className="home-blog-desc">
+              Check more posts in our blog for
+              featured news and advertising insights
+            </p>
+            <a href="" className="home-blog-link">Go to blog</a>
+          </div>
+          <div className="home-blog-item">
+            <div><img src="/images/latest-post1.png" alt="latest-post1" /></div>
+            <div className="blog-item-meta d-f align-center">
+              <p className='text-uppercase'>Seo</p>
+              <div><img src="/images/divider.png" alt="divider" /></div>
+              <p className="blog-item-date">July 5, 2020</p>
+              <div><img src="/images/divider.png" alt="divider" /></div>
+              <p className="blog-item-author">By Diane Mccoy</p>
+            </div>
+            <h3 className="blog-item-title">
+              How to Maximize Your ROI Through Scientific SEM?
+            </h3>
+            <p className="blog-item-desc">
+              Vulputate vitae pellentesque scelerisque
+              luctus consequat mattis pellentesque dui odio...
+            </p>
+            <div className="blog-item-more d-f align-center">
+              <h4 className="more-title">Read more</h4>
+              <a href="" className="more-link">
+                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z" fill="#7772F1" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div className="home-blog-item">
+            <div><img src="/images/latest-post2.png" alt="latest-post2" /></div>
+            <div className="blog-item-meta d-f align-center">
+              <p>Marketing</p>
+              <div><img src="/images/divider.png" alt="divider" /></div>
+              <p className="blog-item-date">July 2, 2020</p>
+              <div><img src="/images/divider.png" alt="divider" /></div>
+              <p className="blog-item-author">By Diane Mccoy</p>
+            </div>
+            <h3 className="blog-item-title">
+              The Basics of Blogging Search Engine Optimization.
+            </h3>
+            <p className="blog-item-desc">
+              Mauris tincidunt sollicitudin tristique odio eget volutpat. 
+              Fringilla viverra amet, mi interdum blandit...
+            </p>
+            <div className="blog-item-more d-f align-center">
+              <h4 className="more-title">Read more</h4>
+              <a href="" className="more-link">
+                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z" fill="#7772F1" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
