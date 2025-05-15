@@ -1,0 +1,170 @@
+.services-main {
+    margin-top: -72px;
+    padding-top: 152px;
+    padding-bottom: 120px;
+    background: url("/images/services-main-bg.png") no-repeat;
+}
+
+.services-main-title {
+    margin-top: 40px;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--white);
+}
+
+.services-main-desc {
+    width: 810px;
+    margin: 24px auto 0;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(255, 255, 255, .6);
+}
+
+.services-main-actions {
+    width: fit-content;
+    margin: 60px auto 0;
+    gap: 40px;
+}
+
+.services-main-start {
+    display: block;
+    width: 154px;
+    height: 52px;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: var(--white);
+}
+
+.services-main-call {
+    gap: 12px;
+
+    .call-name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: rgba(255, 255, 255, .6);
+    }
+
+    .call-phone {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--white);
+    }
+}
+
+.services-middle {
+    margin-top: -20px;
+    margin-left: 157px;
+    margin-right: 119.13px;
+    padding-top: 77.95px;
+    background: url("/images/services-middle-bg.png") no-repeat;
+}
+
+.services-info {
+    margin-bottom: 38px;
+    gap: 80px;
+
+    &:nth-child(1) {
+        margin-left: 188px;
+
+        .services-info-desc {
+            height: 156px;
+        }
+    }
+
+    &:nth-child(3) {
+        margin-left: 188px;
+    }
+
+    &:nth-child(4) {
+        margin-left: 40px;
+    }
+
+    &:nth-child(5) {
+        margin-bottom: 0;
+        margin-left: 188px;
+    }
+}
+
+.services-info-desc {
+    width: 575px;
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-700);
+}
+
+.services-info-actions {
+    margin-top: 48px;
+    gap: 24px;
+}
+
+.services-info-more {
+    width: 140px;
+    height: 44px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: var(--primary);
+}
+
+.services-info-try {
+    width: 165px;
+    height: 44px;
+    background-color: var(--primary);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    letter-spacing: 0,5px;
+    text-align: center;
+    color: var(--white);
+}
+
+.services-markets {
+    margin-top: 180px;
+}
+
+.services-markets-box {
+    margin-top: 60px;
+    margin-left: 345px;
+    gap: 45px;
+}
+
+.services-markets-item {
+    width: 240px;
+    text-align: center;
+
+    .markets-item-title {
+        margin-top: 24px;
+        font-size: 20px;
+        line-height: 150%;
+        color: var(--gray-900);
+    }
+
+    .markets-item-desc {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 160%;
+        color: var(--gray-700);
+    }
+}
+
+.services-clients {
+    width: fit-content;
+    margin: 120px auto 0;
+}

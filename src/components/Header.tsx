@@ -1,13 +1,14 @@
+import { Link } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
   return (
     <div className='header d-f jc-sb align-center'>
       <div className="d-f">
-        <div><img src="/images/logo.svg" alt="Logo" /></div>
+        <div><Link to="/"><img src="/images/logo.svg" alt="Logo" /></Link></div>
         <nav>
           <ul className="header-nav d-f">
-            <li className="header-nav-item"><a href="">Services</a></li>
+            <li className="header-nav-item"><Link to="/services">Services</Link></li>
             <li className="header-nav-item"><a href="">Case Studies</a></li>
             <li className="header-nav-item"><a href="">About Us</a></li>
             <li className="header-nav-item"><a href="">Blog</a></li>

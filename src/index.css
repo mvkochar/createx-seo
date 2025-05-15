@@ -99,3 +99,14 @@ body {
   line-height: 130%;
   color: var(--gray-900);
 }
+
+.page-breadcrumb {
+  width: fit-content;
+  margin:  0 auto;
+  gap: 8px;
+}
+
+.page-breadcrumb-current {
+  font-size: 14px;
+  color: var(--white);
+}

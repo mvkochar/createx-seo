@@ -309,7 +309,7 @@
     height: 44px;
     margin-top: 60px;
     padding-left: 32px;
-    background: var(--primary) url("/public/images/arrow-right.svg") no-repeat;
+    background: var(--primary) url("/images/arrow-right.svg") no-repeat;
     background-position-y: center;
     background-position-x: 136px;
     border-radius: 4px;
@@ -448,7 +448,7 @@
 }
 
 .home-studies-item:hover {
-    background: url("/public/images/studies-item-bg.svg") no-repeat;
+    background: url("/images/studies-item-bg.svg") no-repeat;
 
     .studies-item-title,
     .studies-item-desc,
@@ -666,7 +666,7 @@
 .home-testimonials {
     margin-top: 180px;
     padding-bottom: 80px;
-    background: url("/public/images/home-testimonials-bg.png") no-repeat;
+    background: url("/images/home-testimonials-bg.png") no-repeat;
     background-position-x: center;
     background-position-y: 39px;
 }
