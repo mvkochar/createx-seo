@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import { Home, Services } from '../pages'
+import { CaseStudies, Home, Services } from '../pages'
 
 const Main = () => {
   return (
@@ -11,6 +11,10 @@ const Main = () => {
         <Route
           path='services'
           element={<Services/>}
+        />
+        <Route
+          path='case-studies'
+          element={<CaseStudies/>}
         />
     </Routes>
   )

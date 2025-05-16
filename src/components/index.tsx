@@ -6,4 +6,4 @@ import FaqItem from "./FaqItem/FaqItem";
 import Studies from "./Studies";
 import LatestNews from "./LatestNews";
 
-export {Header, Main, Footer, SeoAnalysis, FaqItem, Studies, LatestNews}
+export { Header, Main, Footer, SeoAnalysis, FaqItem, Studies, LatestNews }

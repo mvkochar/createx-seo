@@ -9,7 +9,7 @@ const Header = () => {
         <nav>
           <ul className="header-nav d-f">
             <li className="header-nav-item"><Link to="/services">Services</Link></li>
-            <li className="header-nav-item"><a href="">Case Studies</a></li>
+            <li className="header-nav-item"><Link to="/case-studies">Case Studies</Link></li>
             <li className="header-nav-item"><a href="">About Us</a></li>
             <li className="header-nav-item"><a href="">Blog</a></li>
             <li className="header-nav-item"><a href="">Contacts</a></li>
