@@ -1,0 +1,303 @@
+.about-main {
+    margin-top: -72px;
+    padding-top: 152px;
+    padding-bottom: 77px;
+    background: url("/images/about-main-bg.png") no-repeat;
+}
+
+.about-main-title {
+    margin-top: 40px;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--white);
+}
+
+.about-main-desc {
+    width: 810px;
+    margin: 24px auto 0;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(255, 255, 255, .6);
+}
+
+.about-main-features {
+    width: fit-content;
+    margin: 120px auto 0;
+    gap: 94px;
+
+    .divider {
+        width: 1px;
+        height: 40px;
+        background: linear-gradient(95deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12%,
+                #DADBDD 52%, rgba(218, 219, 221, 0.5) 88%, rgba(218, 219, 221, 0) 100%);
+    }
+
+    .features-item {
+        gap: 20px;
+    }
+
+    .features-item-title {
+        font-size: 20px;
+        color: var(--white);
+    }
+}
+
+.about-figures {
+    width: fit-content;
+    margin: 120px auto 0;
+    gap: 48px;
+}
+
+.about-figures-item {
+    width: 148px;
+
+    .figures-item-circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 148px;
+        height: 148px;
+        border-radius: 100%;
+    }
+
+    .figures-item-num {
+        font-size: 32px;
+        color: var(--gray-900);
+    }
+
+    .figures-item-desc {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        color: var(--gray-800);
+    }
+}
+
+.about-figures-item:nth-child(1) {
+    background: url("/images/circle-progress1.png") no-repeat;
+}
+
+.about-figures-item:nth-child(2) {
+    background: url("/images/circle-progress2.png") no-repeat;
+}
+
+.about-figures-item:nth-child(3) {
+    background: url("/images/circle-progress3.png") no-repeat;
+}
+
+.about-figures-item:nth-child(4) {
+    background: url("/images/circle-progress4.png") no-repeat;
+}
+
+.about-wr {
+    padding-top: 125px;
+    padding-bottom: 180px;
+    background: url("/public/images/about-wr-bg.png") no-repeat;
+}
+
+.about-video {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.about-values {
+    margin-top: 180px;
+    margin-left: 345px;
+    gap: 80px;
+
+    .page-bl-title {
+        width: 340px;
+    }
+
+    >div:nth-child(2),
+    >div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+}
+
+.about-values-item {
+    width: 340px;
+
+    .values-item-title {
+        margin-top: 24px;
+        font-size: 20px;
+        line-height: 150%;
+        color: var(--gray-900);
+    }
+
+    .values-item-desc {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 160%;
+        color: var(--gray-700);
+    }
+}
+
+.about-gallery {
+    height: 726px;
+    margin-top: 180px;
+    margin-left: 345px;
+    position: relative;
+}
+
+.about-gallery-box {
+    gap: 30px;
+
+    >div:nth-child(1) {
+        display: flex;
+        margin-top: 75px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    >div:nth-child(3) {
+        margin-top: 175px;
+    }
+}
+
+.about-gallery-card {
+    width: 805px;
+    height: 266px;
+    padding: 48px 60px;
+    background-color: var(--white);
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    position: absolute;
+    top: 460px;
+    left: 215px;
+}
+
+.about-gallery-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    color: var(--gray-900);
+}
+
+.about-gallery-desc {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-700);
+}
+
+.about-awards {
+    margin-top: 120px;
+    margin-left: 345px;
+    gap: 135px;
+}
+
+.about-awards-box {
+    width: 760px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 48px;
+}
+
+.about-awards-item {
+    width: 340px;
+    gap: 20px;
+
+    .awards-item-desc {
+        font-size: 16px;
+        line-height: 160%;
+        color: var(--gray-800);
+    }
+}
+
+.about-cta {
+    width: 1230px;
+    margin-top: 120px;
+    margin-left: 345px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background: var(--primary) url("/public/images/about-cta-bg.png") no-repeat;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+   
+    .page-bl-title {
+        color: var(--white);
+    }
+}
+
+.about-cta-fm {
+    margin-top: 32px;
+    margin-left: 60px;
+    gap: 24px;
+
+    label, input, button {
+        display: block;
+    }
+
+    label {
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--white);
+    }
+
+    input {
+        width: 260px;
+        padding-top: 11px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        background-color: var(--gray-200);
+        border: 1px solid var(--gray-400);
+        border-radius: 4px;
+        outline: none;
+        font-size: 14px;
+        color: var(--gray-900);
+
+        &::placeholder {
+            color: var(--gray-600);
+        }
+    }
+
+    input[type=url] {
+        width: 338px;
+    }
+
+    button {
+        width: 178px;
+        height: 44px;
+        align-self: flex-end;
+        background-color: var(--gray-900);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        color: var(--white);
+    }
+}
+
+.about-clients {
+    margin-top: 120px;
+}
+
+.about-clients-logos {
+    width: fit-content;
+    margin: 60px auto 0;
+}
+
+.about-team {
+    margin-top: 180px;
+}
+
+.about-team-box {
+    margin-top: 60px;
+    margin-left: 345px;
+    margin-right: 345px;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 60px;
+}
