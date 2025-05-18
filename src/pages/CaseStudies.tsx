@@ -1,3 +1,4 @@
+import { LatestNews, Testimonials } from '../components'
 import './css/CaseStudies.css'
 
 const CaseStudies = () => {
@@ -243,6 +244,13 @@ const CaseStudies = () => {
             <div className="case-more d-f align-center">
                 <div><img src="/images/convert.png" alt="convert" /></div>
                 <button className='case-more-btn'>Load more</button>
+            </div>
+            <div className="case-bottom">
+                <div className="case-clients"><img src="/images/clients-logos.png" alt="clients-logos" /></div>
+                <div className="case-testimonials">
+                    <Testimonials/>
+                </div>
+                <LatestNews/>
             </div>
         </>
     )

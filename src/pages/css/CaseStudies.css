@@ -238,3 +238,21 @@
     font-size: 16px;
     color: var(--gray-800);
 }
+
+.case-bottom {
+    margin-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 4px;
+    background: url("/images/case-bottom-bg.png") no-repeat;
+}
+
+.case-clients {
+    margin-left: 345px;
+}
+
+.case-testimonials .home-testimonials {
+    margin-top: 110px;
+    background: url("/images/case-testimonials-bg.png") no-repeat;
+    background-position-x: center;
+    background-position-y: 60px;
+}
