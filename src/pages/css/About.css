@@ -219,7 +219,7 @@
     margin-left: 345px;
     padding-top: 48px;
     padding-bottom: 48px;
-    background: var(--primary) url("/public/images/about-cta-bg.png") no-repeat;
+    background: var(--primary) url("/images/about-cta-bg.png") no-repeat;
     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
     border-radius: 4px;
    
@@ -300,4 +300,55 @@
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 60px;
+}
+
+.about-faq {
+    margin-top: 180px;
+    margin-left: 345px;
+}
+
+.about-faq-content {
+    margin-top: 50px;
+    gap: 142px;
+}
+
+.about-faq-box {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about-careers {
+    margin-top: 120px;
+    padding-top: 60px;
+    padding-bottom: 61px;
+    padding-left: 330px;
+    padding-right: 345px;
+    background: var(--gray-200) url("/images/about-careers-bg.png") no-repeat;
+}
+
+.about-careers-desc {
+    width: 600px;
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-800);
+}
+
+.about-careers-more {
+    width: 199px;
+    height: 52px;
+    margin-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: var(--primary);
+    border-radius: 4px;
+
+    .more-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 52px;
+        letter-spacing: 0.5px;
+        color: var(--white);
+    }
 }

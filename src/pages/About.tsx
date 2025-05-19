@@ -1,3 +1,6 @@
+import { FaqItem, LatestNews, TeamMember } from '../components'
+import FaqItemsList from '../components/FaqItemsList'
+import TeamMembersList from '../components/TeamMembersList'
 import './css/About.css'
 
 const About = () => {
@@ -237,13 +240,13 @@ const About = () => {
                                     Top Digital Marketing Agency 2019 by UpCity
                                 </p>
                             </div>
-                             <div className="about-awards-item d-f align-center">
+                            <div className="about-awards-item d-f align-center">
                                 <div><img src="/images/awards3.png" alt="awards3" /></div>
                                 <p className="awards-item-desc">
                                     Official Member 2020 by Forbes Agency Council
                                 </p>
                             </div>
-                             <div className="about-awards-item d-f align-center">
+                            <div className="about-awards-item d-f align-center">
                                 <div><img src="/images/awards4.png" alt="awards4" /></div>
                                 <p className="awards-item-desc">
                                     Top SEO Companies 2020 by Top Developers
@@ -276,8 +279,57 @@ const About = () => {
                 </div>
                 <div className="about-team">
                     <h2 className="page-bl-title text-center">Meet our team</h2>
-                    <div className="about-team-box d-f"></div>
+                    <div className="about-team-box d-f">
+                        {
+                            TeamMembersList.map((member) => {
+                                return (
+                                    <TeamMember
+                                        key={`team-member${member.id}`}
+                                        {...member}
+                                    />
+                                )
+                            })
+                        }
+                    </div>
                 </div>
+                <div className="about-faq">
+                    <h2 className="page-bl-title">Freequently Ask Questions</h2>
+                    <div className="about-faq-content d-f">
+                        <div className="about-faq-box d-f">
+                            {
+                                FaqItemsList.map((faq) => {
+                                    return (
+                                        <FaqItem
+                                            key={`about-faq${faq.id}`}
+                                            {...faq}
+                                        />
+                                    )
+                                })
+                            }
+                        </div>
+                        <div><img src="/images/home-faq.png" alt="home-faq" /></div>
+                    </div>
+                </div>
+                <div className="about-careers d-f jc-sb align-center">
+                    <div><img src="/images/about-careers.png" alt="about-careers" /></div>
+                    <div>
+                        <h2 className="page-bl-title">Careers at Createx Agency</h2>
+                        <p className="about-careers-desc">
+                            Ready to join us on our mission to deliver
+                            the best sales development services to businesses
+                            around the globe? We're hiring!
+                        </p>
+                        <div className="about-careers-more d-f jc-sb align-center">
+                            <p className="more-name">See careers</p>
+                            <a href="" className="d-b">
+                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z" fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <LatestNews/>
             </div>
         </>
     )

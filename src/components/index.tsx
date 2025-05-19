@@ -6,5 +6,6 @@ import FaqItem from "./FaqItem/FaqItem";
 import Studies from "./Studies";
 import LatestNews from "./LatestNews";
 import Testimonials from "./Testimonials";
+import TeamMember from "./TeamMember/TeamMember";
 
-export { Header, Main, Footer, SeoAnalysis, FaqItem, Studies, LatestNews, Testimonials }
+export { Header, Main, Footer, SeoAnalysis, FaqItem, Studies, LatestNews, Testimonials, TeamMember }
