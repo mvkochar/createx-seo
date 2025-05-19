@@ -51,7 +51,7 @@ const Blog = () => {
                         <p className="lates-item-badge">Latest Post</p>
                     </div>
                     <div className="latest-item-meta d-f align-center">
-                        <p className="text-uppercase">Marketing</p>
+                        <p>Marketing</p>
                         <div className="divider"></div>
                         <p className="latest-item-date">July 2, 2020</p>
                         <div className="divider"></div>
