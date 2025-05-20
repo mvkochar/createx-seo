@@ -1,6 +1,15 @@
+import { BlogItem } from '../components'
+import BlogPostsList from '../components/BlogPostsList'
 import './css/Blog.css'
 
 const Blog = () => {
+    const blogLength = BlogPostsList.length
+    const categoryOneLength = BlogPostsList.filter((elem) => elem.category === "Media & Press").length
+    const categoryTwoLength = BlogPostsList.filter((elem) => elem.category === "Ad Tips").length
+    const categoryThreeLength = BlogPostsList.filter((elem) => elem.category === "Marketing").length
+    const categoryFourLength = BlogPostsList.filter((elem) => elem.category === "SEO").length
+    const categoryFiveLength = BlogPostsList.filter((elem) => elem.category === "Paid Search").length
+
     return (
         <>
             <main className='blog-main'>
@@ -20,7 +29,7 @@ const Blog = () => {
                     and receive latest news weekly.
                 </p>
                 <form action="" className='blog-main-fm'>
-                    <input type="text" placeholder='Search the blog' />
+                    <input type="text" name='searchQuery' placeholder='Search the blog' />
                     <button type="button">Search</button>
                 </form>
             </main>
@@ -68,7 +77,122 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-            <div className="blog-content d-f"></div>
+            <div className="blog-content d-f">
+                <div>
+                    <div className="blog-box d-f">
+                        {
+                            BlogPostsList.map((post) => {
+                                return (
+                                    <BlogItem
+                                        key={`blog-post${post.id}`}
+                                        {...post}
+                                    />
+                                )
+                            })
+                        }
+                    </div>
+                    <div className="blog-pagination d-f align-center">
+                        <button className='pagination-btn pagination-btn__active btn-clear d-b'>1</button>
+                        <button className='pagination-btn btn-clear d-b'>2</button>
+                        <button className='pagination-btn btn-clear d-b'>3</button>
+                        <button className='pagination-btn btn-clear d-b'>4</button>
+                        <button className='pagination-btn btn-clear d-b'>Next</button>
+                        <button className='btn-clear d-b'>
+                            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z" fill="#424551" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div className="blog-sidebar d-f">
+                    <div>
+                        <h4 className="sidebar-bl-title">Blog Categories</h4>
+                        <div className="blog-categories d-f">
+                            <div className="d-f jc-sb category__active">
+                                <h5 className="category-name">All</h5>
+                                <p className="category-count">{blogLength}</p>
+                            </div>
+                            <div className="d-f jc-sb">
+                                <h5 className="category-name">Media & Press</h5>
+                                <p className="category-count">{categoryOneLength}</p>
+                            </div>
+                            <div className="d-f jc-sb">
+                                <h5 className="category-name">Ad Tips</h5>
+                                <p className="category-count">{categoryTwoLength}</p>
+                            </div>
+                            <div className="d-f jc-sb">
+                                <h5 className="category-name">Marketing</h5>
+                                <p className="category-count">{categoryThreeLength}</p>
+                            </div>
+                            <div className="d-f jc-sb">
+                                <h5 className="category-name text-uppercase">Seo</h5>
+                                <p className="category-count">{categoryFourLength}</p>
+                            </div>
+                            <div className="d-f jc-sb">
+                                <h5 className="category-name">Paid Search</h5>
+                                <p className="category-count">{categoryFiveLength}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 className="sidebar-bl-title">Now Trending</h4>
+                        <div className="blog-trending d-f">
+                            <div className="blog-trending-item d-f">
+                                <div><img src="/images/blog-trending1.png" alt="blog-trending1" /></div>
+                                <div>
+                                    <p className="trending-item-date">July 5, 2020</p>
+                                    <h5 className="trending-item-title">5 Surprising Ways to Combine Content Marketing with PPC</h5>
+                                </div>
+                            </div>
+                            <div className="blog-trending-item d-f">
+                                <div><img src="/images/blog-trending2.png" alt="blog-trending2" /></div>
+                                <div>
+                                    <p className="trending-item-date">April 9, 2020</p>
+                                    <h5 className="trending-item-title">Why SEO Is All About Content Marketing?</h5>
+                                </div>
+                            </div>
+                            <div className="blog-trending-item d-f">
+                                <div><img src="/images/blog-trending3.png" alt="blog-trending3" /></div>
+                                <div>
+                                    <p className="trending-item-date">March 12, 2020</p>
+                                    <h5 className="trending-item-title">10 tips for a small business digital marketing strategy</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 className="sidebar-bl-title">Tags</h4>
+                        <div className="blog-tags d-f">
+                            <div className='tag'>#tips&tricks</div>
+                            <div className='tag'>#strategy</div>
+                            <div className='tag'>#SMM</div>
+                            <div className='tag'>#business</div>
+                            <div className='tag'>#PPC</div>
+                            <div className='tag'>#targeting</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section className='blog-subscribe d-f'>
+                <div>
+                    <h2 className="page-bl-title">Subsribe to our blog</h2>
+                    <p className="blog-subscribe-desc">
+                        And receive latest trends in search, marketing, digital and news.
+                    </p>
+                    <form action="" className='blog-subscribe-fm'>
+                        <label htmlFor="subscribeEmail">Email</label>
+                        <div className="input-wr">
+                            <input type="email" name="subscribeEmail" id="subscribeEmail" placeholder='Your working email' />
+                            <button type="button">Subscribe</button>
+                        </div>
+                        <div className="check-bl d-f align-center">
+                            <input type="checkbox" name="subscribeAgree" id="subscribeAgree" />
+                            <label htmlFor="subscribeAgree">I agree to receive communications from Createx SEO Agency.</label>
+                        </div>
+                    </form>
+                </div>
+                <div><img src="/images/blog-subscribe.png" alt="blog-subscribe" /></div>
+            </section>
         </>
     )
 }

@@ -131,7 +131,7 @@
             color: var(--gray-900);
         }
     }
-} 
+}
 
 .blog-latest-item:nth-child(1) .latest-item-main {
     background: url("/images/blog-latest1.png") no-repeat;
@@ -143,5 +143,193 @@
 
 .blog-content {
     margin-top: 48px;
+    padding-left: 345px;
     gap: 78px;
+    background: url("/images/blog-content-bg.png") no-repeat;
+    background-position-y: 77px;
+}
+
+.blog-box {
+    width: 810px;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 60px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--gray-300);
+}
+
+.blog-pagination {
+    margin-top: 48px;
+    gap: 20px;
+
+    .pagination-btn {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--gray-800);
+    }
+
+    .pagination-btn__active {
+        color: var(--primary);
+    }
+}
+
+.blog-sidebar {
+    flex-direction: column;
+    gap: 60px;
+
+    .sidebar-bl-title {
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 130%;
+        color: var(--gray-900);
+    }
+}
+
+.blog-categories {
+    width: 342px;
+    flex-direction: column;
+    gap: 8px;
+
+    .category-name,
+    .category-count {
+        font-size: 16px;
+        line-height: 160%;
+        color: var(--gray-800);
+    }
+
+    .category__active .category-name,
+    .category__active .category-count {
+        color: var(--primary) !important;
+    }
+}
+
+.blog-trending {
+    flex-direction: column;
+    gap: 24px;
+}
+
+.blog-trending-item {
+    width: 342px;
+    gap: 20px;
+
+    .trending-item-date {
+        padding-left: 28px;
+        background: url("/images/clock.png") no-repeat;
+        font-size: 14px;
+        color: var(--gray-700);
+    }
+
+    .trending-item-title {
+        margin-top: 4px;
+        font-size: 16px;
+        line-height: 160%;
+        color: var(--gray-900);
+    }
+}
+
+.blog-tags {
+    width: 311px;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 12px;
+
+    .tag {
+        width: fit-content;
+        height: fit-content;
+        padding: 5.5px 16px;
+        border: 1px solid var(--gray-400);
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--gray-700);
+
+        &:hover {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: var(--white);
+        }
+    }
+}
+
+.blog-subscribe {
+    margin-top: 120px;
+    padding-top: 56px;
+    padding-bottom: 88px;
+    padding-left: 345px;
+    gap: 256px;
+    background: url("/public/images/blog-subscribe-bg.png") no-repeat;
+}
+
+.blog-subscribe-desc {
+    width: 421px;
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-700);
+}
+
+.blog-subscribe-fm {
+    margin-top: 40px;
+
+    label {
+        display: block;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--gray-800);
+    }
+
+    .input-wr {
+        width: 420px;
+        margin-top: 8px;
+        background-color: var(--white);
+        border: 1px solid var(--gray-400);
+        border-radius: 4px;
+
+        input {
+            width: 68.8%;
+            padding-top: 11px;
+            padding-bottom: 12px;
+            padding-left: 16px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            color: var(--gray-800);
+
+            &::placeholder {
+                color: var(--gray-600);
+            }
+        }
+
+        button {
+            width: 130px;
+            height: 44px;
+            background-color: var(--primary);
+            border: none;
+            border-radius: 0px 4px 4px 0px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 44px;
+            letter-spacing: 0.5px;
+            color: var(--white);
+        }
+    }
+
+    .check-bl {
+        margin-top: 24px;
+        gap: 12px;
+
+        input {
+            width: 16px;
+            height: 16px;
+
+            &:checked {
+                appearance: none;
+                background: var(--primary) url("/public/images/check.png") no-repeat center;
+            }
+        }
+
+        
+    }
 }
