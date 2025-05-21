@@ -3,5 +3,6 @@ import Services from "./Services";
 import CaseStudies from "./CaseStudies";
 import About from "./About";
 import Blog from "./Blog";
+import Contacts from "./Contacts";
 
-export { Home, Services, CaseStudies, About, Blog }
+export { Home, Services, CaseStudies, About, Blog, Contacts }
