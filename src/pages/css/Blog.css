@@ -197,6 +197,10 @@
         color: var(--gray-800);
     }
 
+    .category-name {
+        cursor: pointer;
+    }
+
     .category__active .category-name,
     .category__active .category-count {
         color: var(--primary) !important;
@@ -257,7 +261,7 @@
     padding-bottom: 88px;
     padding-left: 345px;
     gap: 256px;
-    background: url("/public/images/blog-subscribe-bg.png") no-repeat;
+    background: url("/images/blog-subscribe-bg.png") no-repeat;
 }
 
 .blog-subscribe-desc {
@@ -326,7 +330,7 @@
 
             &:checked {
                 appearance: none;
-                background: var(--primary) url("/public/images/check.png") no-repeat center;
+                background: var(--primary) url("/images/check.png") no-repeat center;
             }
         }
 

@@ -1,3 +1,4 @@
+import React from 'react'
 import { BlogItem } from '../components'
 import BlogPostsList from '../components/BlogPostsList'
 import './css/Blog.css'
@@ -9,6 +10,8 @@ const Blog = () => {
     const categoryThreeLength = BlogPostsList.filter((elem) => elem.category === "Marketing").length
     const categoryFourLength = BlogPostsList.filter((elem) => elem.category === "SEO").length
     const categoryFiveLength = BlogPostsList.filter((elem) => elem.category === "Paid Search").length
+
+    const [categoryName, setCategoryName] = React.useState("All")
 
     return (
         <>
@@ -81,7 +84,7 @@ const Blog = () => {
                 <div>
                     <div className="blog-box d-f">
                         {
-                            BlogPostsList.map((post) => {
+                            BlogPostsList.filter((elem) => elem.category === categoryName || categoryName === "All").map((post) => {
                                 return (
                                     <BlogItem
                                         key={`blog-post${post.id}`}
@@ -108,28 +111,28 @@ const Blog = () => {
                     <div>
                         <h4 className="sidebar-bl-title">Blog Categories</h4>
                         <div className="blog-categories d-f">
-                            <div className="d-f jc-sb category__active">
-                                <h5 className="category-name">All</h5>
+                            <div className={categoryName === "All" ? "d-f jc-sb category__active" : "d-f jc-sb"}>
+                                <h5 className="category-name" onClick={() => setCategoryName("All")}>All</h5>
                                 <p className="category-count">{blogLength}</p>
                             </div>
-                            <div className="d-f jc-sb">
-                                <h5 className="category-name">Media & Press</h5>
+                            <div className={categoryName === "Media & Press" ? "d-f jc-sb category__active" : "d-f jc-sb"}>
+                                <h5 className="category-name" onClick={() => setCategoryName("Media & Press")}>Media & Press</h5>
                                 <p className="category-count">{categoryOneLength}</p>
                             </div>
-                            <div className="d-f jc-sb">
-                                <h5 className="category-name">Ad Tips</h5>
+                            <div className={categoryName === "Ad Tips" ? "d-f jc-sb category__active" : "d-f jc-sb"}>
+                                <h5 className="category-name" onClick={() => setCategoryName("Ad Tips")}>Ad Tips</h5>
                                 <p className="category-count">{categoryTwoLength}</p>
                             </div>
-                            <div className="d-f jc-sb">
-                                <h5 className="category-name">Marketing</h5>
+                            <div className={categoryName === "Marketing" ? "d-f jc-sb category__active" : "d-f jc-sb"}>
+                                <h5 className="category-name" onClick={() => setCategoryName("Marketing")}>Marketing</h5>
                                 <p className="category-count">{categoryThreeLength}</p>
                             </div>
-                            <div className="d-f jc-sb">
-                                <h5 className="category-name text-uppercase">Seo</h5>
+                            <div className={categoryName === "SEO" ? "d-f jc-sb category__active" : "d-f jc-sb"}>
+                                <h5 className="category-name text-uppercase" onClick={() => setCategoryName("SEO")}>Seo</h5>
                                 <p className="category-count">{categoryFourLength}</p>
                             </div>
-                            <div className="d-f jc-sb">
-                                <h5 className="category-name">Paid Search</h5>
+                            <div className={categoryName === "Paid Search" ? "d-f jc-sb category__active" : "d-f jc-sb"}>
+                                <h5 className="category-name" onClick={() => setCategoryName("Paid Search")}>Paid Search</h5>
                                 <p className="category-count">{categoryFiveLength}</p>
                             </div>
                         </div>
