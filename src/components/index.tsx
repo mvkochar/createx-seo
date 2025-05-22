@@ -8,8 +8,9 @@ import LatestNews from "./LatestNews";
 import Testimonials from "./Testimonials";
 import TeamMember from "./TeamMember/TeamMember";
 import BlogItem from "./BlogItem/BlogItem";
+import Pricing from "./Pricing";
 
 export {
     Header, Main, Footer, SeoAnalysis, FaqItem, Studies, LatestNews,
-    Testimonials, TeamMember, BlogItem
+    Testimonials, TeamMember, BlogItem, Pricing
 }

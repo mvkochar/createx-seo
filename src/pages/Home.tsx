@@ -1,4 +1,4 @@
-import { FaqItem, LatestNews, SeoAnalysis, Studies, Testimonials } from '../components'
+import { FaqItem, LatestNews, SeoAnalysis, Studies, Testimonials, Pricing } from '../components'
 import FaqItemsList from '../components/FaqItemsList'
 import './css/Home.css'
 
@@ -196,7 +196,7 @@ const Home = () => {
           </div>
           <div><img src="/images/home-faq.png" alt="home-faq" /></div>
         </div>
-        <Studies/>
+        <Studies />
         <div className="home-benefits">
           <h2 className="page-bl-title text-center">Our benefits</h2>
           <div className="home-bentefits-content d-f jc-sb align-center">
@@ -354,62 +354,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='home-pricing'>
-          <h2 className="page-bl-title text-center">Flexible pricing plans</h2>
-          <div className="home-pricing-tabs d-f">
-            <button className='tab-btn tab-btn__active'>Monthly</button>
-            <button className='tab-btn'>Yearly <span>-12% Off</span></button>
-          </div>
-          <div className="home-pricing-box d-f">
-            <div className="home-pricing-item">
-              <h3 className="pricing-item-title">Basic</h3>
-              <h4 className="pricing-item-price">$24 <sup>/mon</sup></h4>
-              <div className="divider"></div>
-              <ul className="pricing-item-list">
-                <li>Advanced Analytics</li>
-                <li>Change Management</li>
-                <li>Corporate Finance</li>
-                <li>One Way Link Building</li>
-                <li>Social Media Marketing</li>
-                <li className='unavailable'>Strategy & Marketing</li>
-                <li className='unavailable'>Information Technology</li>
-              </ul>
-              <a href="" className="pricing-item-choose">Choose plan</a>
-            </div>
-            <div className="home-pricing-item">
-              <h3 className="pricing-item-title">Optimal</h3>
-              <h4 className="pricing-item-price">$64 <sup>/mon</sup></h4>
-              <div className="divider"></div>
-              <ul className="pricing-item-list">
-                <li>Advanced Analytics</li>
-                <li>Change Management</li>
-                <li>Corporate Finance</li>
-                <li>One Way Link Building</li>
-                <li>Social Media Marketing</li>
-                <li>Strategy & Marketing</li>
-                <li className='unavailable'>Information Technology</li>
-              </ul>
-              <a href="" className="pricing-item-choose">Choose plan</a>
-            </div>
-            <div className="home-pricing-item">
-              <h3 className="pricing-item-title">Premium</h3>
-              <h4 className="pricing-item-price">$98 <sup>/mon</sup></h4>
-              <div className="divider"></div>
-              <ul className="pricing-item-list">
-                <li>Advanced Analytics</li>
-                <li>Change Management</li>
-                <li>Corporate Finance</li>
-                <li>One Way Link Building</li>
-                <li>Social Media Marketing</li>
-                <li>Strategy & Marketing</li>
-                <li>Information Technology</li>
-              </ul>
-              <a href="" className="pricing-item-choose">Choose plan</a>
-            </div>
-          </div>
-        </div>
-        <Testimonials/>
-        <LatestNews/>
+        <Pricing />
+        <Testimonials />
+        <LatestNews />
       </div>
     </>
   )

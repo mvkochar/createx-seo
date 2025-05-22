@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { LatestNews, SeoAnalysis, Studies } from '../components'
 import './css/Services.css'
 
@@ -68,7 +69,7 @@ const Services = () => {
                             nisl sem in tristique.
                         </p>
                         <div className="services-info-actions d-f">
-                            <a href="" className="services-info-more">Learn more</a>
+                            <Link to="/service" className="services-info-more">Learn more</Link>
                             <a href="" className="services-info-try">Try SEO toolkit</a>
                         </div>
                     </div>

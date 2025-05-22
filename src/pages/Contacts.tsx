@@ -37,6 +37,7 @@ const Contacts = () => {
 
     const handleChange = (event: Event, newValue: number[]) => {
         setValue(newValue);
+        console.log(event.target)
     };
 
     return (
