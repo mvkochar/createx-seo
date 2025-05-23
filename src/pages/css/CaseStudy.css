@@ -1,0 +1,148 @@
+.study-main {
+    margin-top: -72px;
+    padding-top: 152px;
+    padding-bottom: 137px;
+    background: url("/images/study-main-bg.png") no-repeat;
+}
+
+.study-main-logo {
+    width: fit-content;
+    margin: 32px auto 0;
+}
+
+.study-main-title {
+    width: 1020px;
+    margin: 24px auto 0;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--white);
+}
+
+.study-content {
+    margin-top: 100px;
+    margin-bottom: 180px;
+    padding-left: 245px;
+    gap: 80.83px;
+    background: url("/images/study-content-bg.png") no-repeat;
+    background-position-y: 148px;
+}
+
+.study-figures {
+    gap: 60px;
+}
+
+.study-figures-item {
+    gap: 20px;
+
+    dl {
+        color: var(--gray-900);
+
+        dt {
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 130%;
+        }
+
+        dd {
+            font-size: 20px;
+            line-height: 150%;
+        }
+    }
+}
+
+.study-desc-bold {
+    width: 705px;
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-900);
+}
+
+.study-desc {
+    width: 705px;
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-800);
+}
+
+.study-diagram {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 32px;
+    padding-bottom: 37px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: var(--white);
+    border: 1px solid var(--gray-300);
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+}
+
+.study-diagram-title {
+    font-size: 24px;
+    color: var(--gray-900);
+}
+
+.study-diagram-legend {
+    gap: 20px;
+
+    .diagram-legend-item {
+        gap: 8px;
+
+        .ellipse {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+        }
+
+        .legend-item-title {
+            font-weight: 400;
+            font-size: 14px;
+            color: var(--gray-700);
+        }
+
+        &:nth-child(1) {
+            .ellipse {
+                background-color: var(--primary);
+            }
+        }
+
+        &:nth-child(2) {
+            .ellipse {
+                background-color: #00F0B5;
+            }
+        }
+    }
+}
+
+.study-bl-title {
+    margin-bottom: 24px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    color: var(--gray-900);
+}
+
+.study-bl-list {
+    list-style-type: none;
+
+    li {
+        margin-bottom: 4px;
+        padding-left: 28px;
+        background: url("/public/images/mark.png") no-repeat;
+        background-position-y: center;
+        font-size: 16px;
+        line-height: 160%;
+        color: var(--gray-800);
+    }
+}
+
+.study-pic {
+    margin-top: -20px;
+    margin-bottom: 12.52px;
+    margin-left: -105px;
+}
