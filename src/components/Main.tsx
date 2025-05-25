@@ -1,5 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
-import { About, Blog, CaseStudies, CaseStudy, Contacts, Home, Service, Services } from '../pages'
+import {
+  About, Blog, Careers, CaseStudies, CaseStudy, Contacts,
+  Home, Service, Services
+} from '../pages'
 
 const Main = () => {
   return (
@@ -30,11 +33,15 @@ const Main = () => {
       />
       <Route
         path='service'
-        element={<Service/>}
+        element={<Service />}
       />
       <Route
         path='case-study'
-        element={<CaseStudy/>}
+        element={<CaseStudy />}
+      />
+      <Route
+        path='careers'
+        element={<Careers />}
       />
     </Routes>
   )
