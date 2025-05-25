@@ -133,7 +133,7 @@
     li {
         margin-bottom: 4px;
         padding-left: 28px;
-        background: url("/public/images/mark.png") no-repeat;
+        background: url("/images/mark.png") no-repeat;
         background-position-y: center;
         font-size: 16px;
         line-height: 160%;
@@ -145,4 +145,83 @@
     margin-top: -20px;
     margin-bottom: 12.52px;
     margin-left: -105px;
+}
+
+.study-about {
+    width: 390px;
+    padding: 40px 32px;
+    background-color: var(--gray-200);
+    border-radius: 4px;
+    flex-direction: column;
+    gap: 24px;
+
+    .about-bl-title {
+        margin-bottom: 12px;
+        font-size: 24px;
+        line-height: 130%;
+        color: var(--gray-900);
+    }
+
+    .about-bl-desc {
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--gray-800);
+    }
+
+    .about-bl-list {
+        list-style-type: none;
+
+        li {
+            margin-bottom: 8px;
+            padding-left: 28px;
+            background: url("/images/mark.png") no-repeat;
+            background-position-y: center;
+            font-size: 14px;
+            line-height: 150%;
+            color: var(--gray-800);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }   
+}
+
+.study-tags {
+    margin-top: 48px;
+    gap: 12px;
+
+    .tag {
+        width: fit-content;
+        height: fit-content;
+        padding: 5.5px 16px;
+        border: 1px solid var(--gray-400);
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--gray-700);
+
+        &:hover {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: var(--white);
+        }
+    }
+} 
+
+.study-share {
+    margin-top: 48px;
+    gap: 12px;
+}
+
+.study-share-title {
+    margin-top: -2px;
+    font-size: 20px;
+    color: var(--gray-900);
+}
+
+.study-bottom {
+    padding-top: 20px;
+    padding-bottom: 102px;
+    background: url("/images/study-bottom-bg.png") no-repeat;
 }
