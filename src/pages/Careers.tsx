@@ -1,6 +1,25 @@
+import { JobPanel } from '../components'
+import JobList from '../components/JobList'
+import fileDialog from 'file-dialog'
 import './css/Careers.css'
 
 const Careers = () => {
+
+    const openFileDialog = () => {
+        fileDialog()
+            .then(file => {
+                const data = new FormData()
+                data.append('file', file[0])
+                data.append('imageName', 'flower')
+
+                // Post to server
+                fetch('/uploadImage', {
+                    method: 'POST',
+                    body: data
+                })
+            })
+    }
+
     return (
         <>
             <main className='careers-main'>
@@ -55,7 +74,70 @@ const Careers = () => {
                     </div>
                 </div>
             </main >
-            <section className='careers-job'></section>
+            <section className='careers-job d-f'>
+                {
+                    JobList.map((job) => {
+                        return (
+                            <JobPanel
+                                key={`job${job.id}`}
+                                {...job}
+                            />
+                        )
+                    })
+                }
+            </section>
+            <section className="careers-contact d-f">
+                <div>
+                    <h2 className="page-bl-title">
+                        Didn't find what you <br /> were looking for?
+                    </h2>
+                    <p className="careers-contact-desc">
+                        Send your CV or subscribe to our newsletter
+                        to receive information about new vacancies.
+                    </p>
+                </div>
+                <form action="" className='careers-contact-fm'>
+                    <div className="input-bl d-f">
+                        <div>
+                            <label htmlFor="contactName">Name*</label>
+                            <input type="text" name='contactName' id='contactName' placeholder='Your name' />
+                        </div>
+                        <div>
+                            <label htmlFor="contactPhone">Phone*</label>
+                            <input type="text" name='contactPhone' id='contactPhone' placeholder='Your phone number' />
+                        </div>
+                    </div>
+                    <div className="input-bl d-f">
+                        <div>
+                            <label htmlFor="contactEmail">Email*</label>
+                            <input type="email" name='contactEmail' id='contactEmail' placeholder='Your working email' />
+                        </div>
+                        <div>
+                            <label htmlFor="contactInterested">I am interested in*</label>
+                            <div className="select-wr">
+                                <select name="contactInterested" id="contactInterested">
+                                    <option value="0">Choose...</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="input-bl">
+                        <label htmlFor="contactCover">Cover letter</label>
+                        <textarea name="contactCover" id="contactCover" placeholder='Your cover letter'></textarea>
+                    </div>
+                    <div className="attach-bl d-f">
+                        <button type="button" className='btn-clear d-b' onClick={openFileDialog}>
+                            <img src="/images/attach.svg" alt="attach" />
+                        </button>
+                        <p>Attach your CV*</p>
+                    </div>
+                    <div className="check-bl d-f align-center">
+                        <input type="checkbox" name="contactWant" id="contactWant" />
+                        <label htmlFor="contactWant">I want to suscribe to receive information about new vacancies.</label>
+                    </div>
+                    <button type="button" className='send-btn'>Send Resume</button>
+                </form>
+            </section>
         </>
     )
 }
