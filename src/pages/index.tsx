@@ -7,8 +7,9 @@ import Contacts from "./Contacts";
 import Service from "./Service";
 import CaseStudy from "./CaseStudy";
 import Careers from "./Careers";
+import SinglePost from "./SinglePost";
 
 export {
     Home, Services, CaseStudies, About, Blog, Contacts,
-    Service, CaseStudy, Careers
+    Service, CaseStudy, Careers, SinglePost
 }

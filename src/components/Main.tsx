@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import {
   About, Blog, Careers, CaseStudies, CaseStudy, Contacts,
-  Home, Service, Services
+  Home, Service, Services, SinglePost
 } from '../pages'
 
 const Main = () => {
@@ -42,6 +42,10 @@ const Main = () => {
       <Route
         path='careers'
         element={<Careers />}
+      />
+      <Route
+        path='single-post'
+        element={<SinglePost />}
       />
     </Routes>
   )
