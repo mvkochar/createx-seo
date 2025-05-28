@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const Footer = () => {
@@ -5,7 +6,7 @@ const Footer = () => {
     <footer className='footer'>
       <div className="d-f jc-sb">
         <div>
-          <div><img src="/images/footer-logo.svg" alt="footer-logo" /></div>
+          <div><Link to="/"><img src="/images/footer-logo.svg" alt="footer-logo" /></Link></div>
           <p className="footer-desc">
             Createx SEO Agency is a full-service digital marketing agency.
             We help businesses make more money through a wealth of performance
@@ -50,11 +51,11 @@ const Footer = () => {
         <div>
           <h4 className="footer-bl-title">Company</h4>
           <ul className="footer-bl-list">
-            <li><a href="">About Us</a></li>
-            <li><a href="">Case Studies</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Contacts</a></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/case-studies">Case Studies</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/careers">Careers</Link></li>
+            <li><Link to="/contacts">Contacts</Link></li>
           </ul>
         </div>
         <div>

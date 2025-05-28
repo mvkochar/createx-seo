@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const LatestNews = () => {
     return (
         <div className="home-blog d-f">
@@ -7,7 +9,7 @@ const LatestNews = () => {
                     Check more posts in our blog for
                     featured news and advertising insights
                 </p>
-                <a href="" className="home-blog-link">Go to blog</a>
+                <Link to="/blog" className="home-blog-link">Go to blog</Link>
             </div>
             <div className="home-blog-item">
                 <div><img src="/images/latest-post1.png" alt="latest-post1" /></div>

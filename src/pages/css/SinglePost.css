@@ -177,7 +177,7 @@
     .navigation-item-date {
         width: fit-content;
         padding-left: 28px;
-        background: url("/public/images/clock.png") no-repeat;
+        background: url("/images/clock.png") no-repeat;
         background-position-y: center;
         font-size: 14px;
         line-height: 150%;
@@ -280,7 +280,7 @@
 
     .trending-item-date {
         padding-left: 28px;
-        background: url("/public/images/clock.png") no-repeat;
+        background: url("/images/clock.png") no-repeat;
         background-position-y: center;
         font-size: 14px;
         line-height: 150%;
@@ -320,4 +320,115 @@
             color: var(--white);
         }
     }
+}
+
+.post-subscribe {
+    margin-top: 180px;
+    padding-top: 54px;
+    padding-bottom: 64px;
+    padding-left: 345px;
+    padding-right: 345px;
+    gap: 176px;
+    background: url("/images/post-subscribe-bg.png") no-repeat;
+    color: var(--white);
+    
+    .page-bl-title {
+        color: var(--white);
+    }
+}
+
+.post-subscribe-desc {
+    width: 495px;
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.post-subscribe-fm {
+    margin-top: 32px;
+
+    label {
+        font-size: 16px;
+        line-height: 160%;
+    }
+
+    .input-wr {
+        width: 495px;
+        margin-top: 8px;
+        background-color: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+
+        input {
+            width: 68.5%;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            padding-left: 16px;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            color: var(--white);
+            
+            &::placeholder {
+                color: rgba(255, 255, 255, .6);
+            }
+        }
+
+        button {
+            width: 154px;
+            height: 52px;
+            background-color: var(--primary);
+            border: none;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 52px;
+            letter-spacing: 0.5px;
+            color: var(--white);
+        }
+
+    }
+
+    .check-bl {
+        margin-top: 32px;
+        gap: 12px;
+
+        input {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+.post-related {
+    margin: 120px 333px 180px 345px;
+}
+
+.post-related-actions {
+    gap: 12px;
+
+    .actions-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--primary);
+            border-radius: 100%;
+
+            svg path {
+                fill: var(--white);
+            }
+        }
+    }
+}
+
+.post-related-box {
+    margin-top: 60px;
+    gap: 30px;
 }
